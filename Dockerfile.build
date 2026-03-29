@@ -1,0 +1,11 @@
+# Reproducible StarQuant C++ build environment (Debian bookworm)
+FROM debian:bookworm-slim
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential cmake pkg-config \
+    libboost-all-dev zlib1g-dev python3-dev \
+    libnanomsg-dev libyaml-cpp-dev libmongoc-dev liblog4cplus-dev libfmt-dev \
+    librdkafka-dev \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /src
+# docker build -t starquant-build .
+# docker run --rm -v "$PWD":/src -w /src/cppsrc/build starquant-build cmake .. && make -j$(nproc)

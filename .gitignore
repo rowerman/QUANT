@@ -1,0 +1,81 @@
+### C++ template
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+### CMake template
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Created by .ignore support plugin (hsz.mobi)
+.arcconfig
+.idea/
+
+# VS related
+*.VC.*
+*.sln
+*.vcxproj*
+Debug/
+.vs/
+.idea/
+
+*_build/
+*/tmp/
+*.pyc
+*.rpm
+*build/
+cmake-build-debug/
+extra_dump.py
+.DS_Store
+# user defined 
+*.ipynb
+/test/
+/research/
+*.vscode/
+*.pyc
+*.yaml
+*__pycache__/
+/data/*
+/etc/*
+/result/*
+/Result/*
+/Research/*
+/log/*
+/legacy/*
+/docs/*
+/dist/*
+/build/*
+*.spec
+/mystrategy/*
+/teststrategy/*
+!/mystrategy/Examplestrategy.py
+!/mystrategy/__init__.py
+*.ipynb_checkpoints/
